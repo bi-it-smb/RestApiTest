@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GameUi/GameUi.csproj" />
+  <Project Path="RestApiTest/RestApiTest.csproj" />
+</Solution>
