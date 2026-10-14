@@ -171,25 +171,3 @@ curl -X DELETE http://localhost:5165/players/1
 ```bash
 dotnet dev-certs https --trust
 ```
-
-## Building for deployment
-
-Publish both projects with:
-
-```bash
-dotnet publish RestApiTest/RestApiTest.csproj -c Release
-dotnet publish GameUi/GameUi.csproj -c Release
-```
-
-For a production deployment, configure the API URL through application configuration or environment-specific settings rather than relying on the development URL in `GameUi/Program.cs`.
-
-## Contributing
-
-1. Create a feature branch.
-2. Make your changes and add tests where appropriate.
-3. Run `dotnet build RestApiTest.slnx`.
-4. Open a pull request with a clear description of the change.
-
-## License
-
-No license has been specified for this repository. Until a license is added, the code should not be assumed to be available for reuse or redistribution.
